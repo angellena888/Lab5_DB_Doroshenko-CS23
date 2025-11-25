@@ -26,6 +26,7 @@
 #  2. Моделі з попередніх робіт (ЛР3–4)
 
 ##  Рис. 1 – Контекстна діаграма A-0
+<img width="1011" height="700" alt="А0" src="https://github.com/user-attachments/assets/b504487f-4bb3-4b61-a5a6-88c2c2d40ef8" />
 https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/А0.png
 Опис: модель показує систему як один процес. Потоки даних: рейси, тарифи, відстані → доступні рейси, інформація для клієнта.
 
