@@ -129,7 +129,11 @@ https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/асоціат
 
 ###  3NF  
 - нема транзитивних залежностей  
-- модель готова до фізичної реалізації  
+- модель готова до фізичної реалізації
+
+#  4. Побудова логічної моделі БД у ERWin
+https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/фізична%20модель.png
+https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/генерація%20SQL-скрипту.png
 
 #  Висновки
 У результаті виконання роботи побудовано повну логічну модель бази даних у ERWin для системи «Продаж авіаквитків».  
