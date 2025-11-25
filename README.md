@@ -27,12 +27,11 @@
 
 ##  Рис. 1 – Контекстна діаграма A-0
 <img width="1011" height="700" alt="А0" src="https://github.com/user-attachments/assets/b504487f-4bb3-4b61-a5a6-88c2c2d40ef8" />
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/А0.png
 Опис: модель показує систему як один процес. Потоки даних: рейси, тарифи, відстані → доступні рейси, інформація для клієнта.
 
 
 ##  Рис. 2 – Декомпозиція A-0
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/декомпозиція%20А0.png
+<img width="1007" height="699" alt="декомпозиція А0" src="https://github.com/user-attachments/assets/5919b872-1621-4b3e-a0ac-ceaefc70ee7e" />
 Три підпроцеси:
 1. Обробка рейсів  
 2. Розрахунок вартості квитка  
@@ -40,28 +39,28 @@ https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/декомпо
 
 
 ##  Рис. 3 – IDEF3 «Обробка замовлень авіаквитків»
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/IDEF3.png
+<img width="1008" height="704" alt="IDEF3" src="https://github.com/user-attachments/assets/bde9e4bf-9dd4-4b2b-9cf8-59e200495b83" />
 Сценарій включає паралельні дії: пошук, розрахунок ціни, перевірка місць.
 
 
 ##  Рис. 4 – IDEF3 «Запит на повернення коштів»
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/IDEF3%20друга.png
+<img width="1009" height="699" alt="IDEF3 друга" src="https://github.com/user-attachments/assets/ce960e5c-3c40-4e92-8438-9ed13d330153" />
 Процес включає перевірку тарифу, OR-розгалуження, підтвердження та повернення.
 
 
 ##  Рис. 5 – DFD «Обробка запиту клієнта»
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/DFD.png
+<img width="1016" height="643" alt="DFD" src="https://github.com/user-attachments/assets/27778a03-fcfb-40e5-a2cb-2b1bedf76cd7" />
 Показує рух даних від запиту → формування квитка.
 
 ##  Рис. 6 – DFD «Розрахунок вартості квитка»
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/DFD%20друга.png
+<img width="1011" height="701" alt="DFD друга" src="https://github.com/user-attachments/assets/82cbee26-c1ff-4f1b-990e-71a616e4c7e5" />
 Використовує два сховища: БД рейсів і БД тарифів.
 
 
 #  3. Побудова логічної моделі БД у ERWin
 
 #  Ітерація 1 — Виділення сутностей
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/виділення%20сутностей.png
+<img width="1041" height="464" alt="виділення сутностей" src="https://github.com/user-attachments/assets/e6f3b45b-876f-4fdd-89cc-8e2344aa5a3a" />
 Сутності:  
 Клієнт, Бронювання, Квиток, Рейс, Тариф, Оплата, Повернення коштів, Клас салону, Тип літака, Місто, Розклад рейсів.
 
@@ -73,7 +72,7 @@ https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/виділен
 - Без атрибутів модель неповна  
 
 #  Ітерація 2 — Додавання атрибутів
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/атрибути%20сутностей.png
+<img width="1222" height="589" alt="атрибути сутностей" src="https://github.com/user-attachments/assets/1f95dc36-4a3c-47a5-adac-fb0c750ecc56" />
 ### Переваги  
 - Деталізує модель  
 - Атрибути відповідають процесним моделям  
@@ -84,7 +83,7 @@ https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/атрибут
 
 
 #  Ітерація 3 — Додавання зв’язків (FK)
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/зв'язки%20сутностей.png
+
 Зв’язки:
 - Клієнт → Бронювання  
 - Бронювання → Квиток  
@@ -123,18 +122,33 @@ https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/асоціат
 Усі сутності та зв’язки перевірені:
 
 ###  1NF  
+<img width="822" height="483" alt="1NF" src="https://github.com/user-attachments/assets/0b309dff-f36b-490c-b066-a851828f606c" />
 - усі атрибути атомарні  
 
 ###  2NF  
+<img width="1404" height="526" alt="2NF" src="https://github.com/user-attachments/assets/b2504fab-0c84-4938-ac51-cabf6aa374fc" />
 - відсутні часткові залежності від складних PK  
 
 ###  3NF  
+<img width="523" height="245" alt="до норм 1NF" src="https://github.com/user-attachments/assets/308dae06-353c-4a76-a534-fe1e8a9d883e" />
+<img width="783" height="254" alt="після норм 3" src="https://github.com/user-attachments/assets/28c19950-fd31-49cb-b3c2-d98de8c7aadb" />
 - нема транзитивних залежностей  
 - модель готова до фізичної реалізації
 
-#  4. Побудова логічної моделі БД у ERWin
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/фізична%20модель.png
-https://github.com/angellena888/Lab5_DB_Doroshenko-CS23/blob/main/генерація%20SQL-скрипту.png
+Ітерація 9 — Нормалізація до 4NF
+<img width="682" height="243" alt="до норм 3" src="https://github.com/user-attachments/assets/acd02d6b-7312-4bb6-a8d9-250f9531cd4f" />
+<img width="783" height="254" alt="після норм 3" src="https://github.com/user-attachments/assets/902d9422-e011-4679-b9e4-4b26af32c0fd" />
+- усунено багатозначні залежності;
+- дані, які описують різні незалежні множини фактів, розділено на окремі таблиці;
+- зв’язки «Тип літака ↔ Клас салону» та «Клас салону ↔ Тариф» виділено в окремі відношення;
+- кожне твердження про предметну область зберігається один раз, без дублювання.
+
+Ітерація 10 — Нормалізація до 5NF
+<img width="807" height="148" alt="до норм 5" src="https://github.com/user-attachments/assets/8cce0a2b-2d32-422b-b43f-2acd40e6adc6" />
+<img width="840" height="339" alt="після норм 4" src="https://github.com/user-attachments/assets/b1a7f33d-121e-4fc3-945d-1981cec83eaf" />
+- складні комбінаційні залежності розкладено на прості незалежні відношення;
+- таблиці, що містили надмірні кортежі через комбінації (місто → місто → дата → рейс), розділено на атомарні сутності: «Рейс», «Дати виконання рейсу»;
+- усунуто залежності, що відновлюються тільки через з’єднання кількох таблиць.
 
 #  Висновки
 У результаті виконання роботи побудовано повну логічну модель бази даних у ERWin для системи «Продаж авіаквитків».  
